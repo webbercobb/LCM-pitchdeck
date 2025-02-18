@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Champs Magnétiques - Investor Pitch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Unica+One&family=Playfair+Display:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #DD1101;
+            overflow-x: hidden;
+        }
+
+        .section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            font-family: 'Unica One', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        h1 {
+            font-size: 8vw;
+            font-weight: 700;
+            position: absolute;
+            top: 10%;
+            animation: glitch 1.5s infinite;
+        }
+
+        h2 {
+            font-size: 3vw;
+            color: white;
+        }
+
+        @keyframes glitch {
+            0% { transform: skew(0deg, 0deg); }
+            20% { transform: skew(5deg, -5deg); }
+            40% { transform: skew(-5deg, 5deg); }
+            60% { transform: skew(0deg, 0deg); }
+        }
+
+        .section:nth-child(odd) {
+            background: black;
+        }
+
+        .section:nth-child(even) {
+            background: #222;
+        }
+
+        .statement {
+            font-size: 2rem;
+            font-style: italic;
+            max-width: 70vw;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .content-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 60%;
+        }
+
+        .cta-button {
+            background: #DD1101;
+            color: white;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: white;
+            color: black;
+        }
+        
+        .image-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            height: auto;
+            opacity: 0.1;
+            animation: flicker 2s infinite;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 0.1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h1>Les Champs Magnétiques</h1>
+        <img src="https://source.unsplash.com/random/600x400/?fashion,surreal" class="image-overlay">
+        <h2>The New Language of Disruption</h2>
+    </div>
+
+    <div class="section">
+        <div class="content-block">
+            <h2>Radical Surrealist Luxury</h2>
+            <p class="statement">LCM is not a brand—it is a **fracture in fashion.** A collision of poetry, material subversion, and the absolute rejection of banality.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content-block">
+            <h2>Artifacts vs. Uniforms</h2>
+            <p class="statement">LCM's **bifurcated product strategy** ensures high-concept surrealism can exist in both the gallery and the street.</p>
+            <p class="statement"><b>Artifacts:</b> Sculptural, 1/1 pieces, non-wearable manifestos.<br> <b>Uniforms:</b> High-wear luxury that distorts the ordinary.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content-block">
+            <h2>Investment & Growth</h2>
+            <p class="statement">An $800K investment for strategic phase 1: **Art-World Entrenchment → Concept Stores → High-Fashion Retail**</p>
+            <button class="cta-button">INVEST NOW</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content-block">
+            <h2>The LCM Effect</h2>
+            <p class="statement">"A wedding veil made of prosciutto. A trench coat that disappears. A suit with knees for lapels. This is not fashion. This is language." </p>
+            <p class="statement">**Invest in Les Champs Magnétiques. Own the new avant-garde.**</p>
+        </div>
+    </div>
+
+</body>
+</html>
